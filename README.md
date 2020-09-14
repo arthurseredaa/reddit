@@ -1,1 +1,1 @@
-[Project link](https://readsubreddit.web.app/)
+[Project link](https://readsubreddits.web.app/)
