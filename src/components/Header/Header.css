@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #000;
+}
+.header__logo {
+  font-family: "Lexend Peta", sans-serif;
+}
+.search__subreddit {
+  display: flex;
+}
+.search__input {
+  color: #fff;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}

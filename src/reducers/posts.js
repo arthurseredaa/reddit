@@ -1,5 +1,4 @@
-import { FETCH_POST_REQUEST, RECEIVE_POSTS } from "./../constants/server";
-import { INVALIDATE_SUBREDDIT } from "./../constants/user";
+import { SERVER, USER } from "../constants";
 
 let initialState = {
   isFetching: false,
@@ -9,18 +8,17 @@ let initialState = {
 
 export const posts = (state = initialState, action) => {
   switch (action.type) {
-    case INVALIDATE_SUBREDDIT:
+    case SERVER.POSTS_REQUEST:
+      return {
+        ...state,
+        isFetching: true,
+      };
+    case USER.INVALIDATE_SUBREDDIT:
       return {
         ...state,
         didInvalidate: true,
       };
-    case FETCH_POST_REQUEST:
-      return {
-        ...state,
-        isFetching: true,
-        didInvalidate: false,
-      };
-    case RECEIVE_POSTS:
+    case SERVER.POSTS_RECEIVE:
       return {
         ...state,
         isFetching: false,

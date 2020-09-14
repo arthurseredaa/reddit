@@ -1,0 +1,27 @@
+.article__card {
+  width: 100%;
+  margin: 50px 0;
+  padding: 20px 10px;
+}
+
+.article__title a {
+  text-decoration: none;
+  color: #424242;
+  opacity: 0.8;
+  line-height: 1.5;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+}
+.article__title a:hover {
+  opacity: 1;
+}
+.article__author {
+  color: rgba(34, 34, 34, 0.7);
+  font-family: "Raleway", sans-serif;
+}
+
+@media only screen and (max-width: 1280px) {
+  .article__card {
+    margin: 0px 0;
+  }
+}

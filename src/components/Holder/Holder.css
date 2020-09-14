@@ -1,0 +1,20 @@
+.articles__holder {
+  min-height: 70vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+  padding: 0px 10em;
+}
+.default__text {
+  font-family: "Raleway", sans-serif;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .articles__holder {
+    padding: 0px 10px;
+  }
+}

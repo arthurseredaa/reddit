@@ -1,8 +1,8 @@
-import { SELECT_SUBREDDIT } from "./../constants/user";
+import { USER } from "../constants";
 
 export const selectedSubreddit = (state = "reactjs", action) => {
   switch (action.type) {
-    case SELECT_SUBREDDIT:
+    case USER.SELECT_SUBREDDIT:
       return action.subreddit;
     default:
       return state;
